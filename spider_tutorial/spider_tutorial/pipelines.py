@@ -14,7 +14,7 @@ class MongodbPipeline:
     collection_name = 'audible'
 
     def open_spider(self, spider):
-        self.client = pymongo.MongoClient("mongodb+srv://Tejasveer_1:mDJcvpmo2726@cluster0.0j9kqm8.mongodb.net/?appName=Cluster0")
+        #self.client = pymongo.MongoClient("")
         self.db = self.client['My_Database']
 
     def close_spider(self, spider):
